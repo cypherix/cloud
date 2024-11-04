@@ -1,0 +1,75 @@
+/* App.css */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+@layer utilities {
+  @variants responsive {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+  }
+}
+
+.home {
+  background: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+
+
+.card {
+  background: rgba(255, 255, 255, 0.09);
+}
+
+.search-bar{
+  background: rgb(255, 255, 255);
+  color: black;
+  font-style: italic;
+  backdrop-filter: blur(40px);
+}
+.explore{
+  background: linear-gradient(68.6deg, rgb(252, 165, 241) 1.8%, rgb(181, 255, 255) 100.5%);
+}
+.search-bar::placeholder{
+  color: black;
+  font-weight: bold;
+  /* blur */
+ 
+  font-style: italic;
+}
+
+.search-bar:focus{
+  outline: none;
+}
+
+
+.search-button button{
+
+  background: rgba(255, 255, 255, 0.09);
+  color: rgb(180, 37, 92);
+  border: 1px solid rgb(180, 37, 92);
+  backdrop-filter: blur(40px)
+}
+.search-button button:hover{
+  background: none;
+  color: rgb(180, 37, 92);
+  font-weight: bold;
+  backdrop-filter: blur(40px)
+}
