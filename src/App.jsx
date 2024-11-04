@@ -8,7 +8,7 @@ import { useDispatch } from "react-redux";
 const App = () => {
   const fetchDataFromDatabase = async () => {
     try {
-      const response = await fetch("http://localhost:3001/api/sneakers");
+      const response = await fetch("http://18.225.36.241:3001/api/sneakers");
       const data = await response.json();
       console.log(data);
       return data;

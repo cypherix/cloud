@@ -21,7 +21,7 @@ import { useNavigate } from 'react-router-dom';
       setIsLoading(true);
   
       try {
-        const response = await fetch('http://localhost:3001/api/register', {
+        const response = await fetch('http://18.225.36.241:3001/api/register', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
